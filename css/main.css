@@ -1862,7 +1862,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1dbd;
+  background: #db5b3e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2850,6 +2850,11 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.post {
+  padding: 45px;
+  border-radius: 4px;
+  box-shadow: rgba(0,0,0,0.16) 0px 3px 10px, rgba(0,0,0,0.23) 0px 3px 10px;
 }
 .pace .pace-progress {
   background: #222; /*进度条颜色*/
