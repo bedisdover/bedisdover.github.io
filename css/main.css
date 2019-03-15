@@ -1862,7 +1862,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffbbe5;
+  background: #ff0;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2862,7 +2862,7 @@ hr {
   border-top-color: #222; /*上边框颜色*/
   border-left-color: #222; /*左边框颜色*/
 }
-.post {
+.posts-expand .post {
   padding: 45px;
   border-radius: 4px;
   box-shadow: rgba(0,0,0,0.16) 0px 3px 10px, rgba(0,0,0,0.23) 0px 3px 10px;
