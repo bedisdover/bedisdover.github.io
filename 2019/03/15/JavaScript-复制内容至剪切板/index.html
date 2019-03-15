@@ -111,25 +111,25 @@
 
 
 
-  <meta name="description" content="单行文本123&amp;lt;div class=&quot;text&quot;&amp;gt;  &amp;lt;p&amp;gt;富强民主文明和谐&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; 123456.text &amp;#123;  width: 100px;  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;&amp;#125;">
-<meta name="keywords" content="overflow,text-overflow">
+  <meta name="description" content="复制 input1234function copy(input) &amp;#123;  input.select()  alert(document.execCommand(&apos;copy&apos;))&amp;#125; 复制文本123456789function copy(text) &amp;#123;  const e = document.createElement(&apos;textarea&apos;)  e.value = text">
+<meta name="keywords" content="剪切板,clipboard,document.execCommand,Range,Selection,Clipboard API">
 <meta property="og:type" content="article">
-<meta property="og:title" content="溢出文本使用省略号表示">
-<meta property="og:url" content="http://yoursite.com/2018/12/14/溢出文本使用省略号表示/index.html">
+<meta property="og:title" content="JavaScript 复制内容至剪切板">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/JavaScript-复制内容至剪切板/index.html">
 <meta property="og:site_name" content="bedisdover&#39;s blog">
-<meta property="og:description" content="单行文本123&amp;lt;div class=&quot;text&quot;&amp;gt;  &amp;lt;p&amp;gt;富强民主文明和谐&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; 123456.text &amp;#123;  width: 100px;  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;&amp;#125;">
+<meta property="og:description" content="复制 input1234function copy(input) &amp;#123;  input.select()  alert(document.execCommand(&apos;copy&apos;))&amp;#125; 复制文本123456789function copy(text) &amp;#123;  const e = document.createElement(&apos;textarea&apos;)  e.value = text">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-04T08:54:14.808Z">
+<meta property="og:updated_time" content="2019-03-15T03:26:09.087Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="溢出文本使用省略号表示">
-<meta name="twitter:description" content="单行文本123&amp;lt;div class=&quot;text&quot;&amp;gt;  &amp;lt;p&amp;gt;富强民主文明和谐&amp;lt;/p&amp;gt;&amp;lt;/div&amp;gt; 123456.text &amp;#123;  width: 100px;  white-space: nowrap;  overflow: hidden;  text-overflow: ellipsis;&amp;#125;">
+<meta name="twitter:title" content="JavaScript 复制内容至剪切板">
+<meta name="twitter:description" content="复制 input1234function copy(input) &amp;#123;  input.select()  alert(document.execCommand(&apos;copy&apos;))&amp;#125; 复制文本123456789function copy(text) &amp;#123;  const e = document.createElement(&apos;textarea&apos;)  e.value = text">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/12/14/溢出文本使用省略号表示/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/JavaScript-复制内容至剪切板/"/>
 
 
 
@@ -139,7 +139,7 @@
   };
 </script>
 
-  <title>溢出文本使用省略号表示 | bedisdover's blog</title>
+  <title>JavaScript 复制内容至剪切板 | bedisdover's blog</title>
   
 
 
@@ -318,7 +318,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/12/14/溢出文本使用省略号表示/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/15/JavaScript-复制内容至剪切板/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="bedisdover">
@@ -335,7 +335,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">溢出文本使用省略号表示
+          <h1 class="post-title" itemprop="name headline">JavaScript 复制内容至剪切板
               
             
           </h1>
@@ -360,24 +360,12 @@
                 
               
 
-              <time title="创建时间：2018-12-14 17:49:00" itemprop="dateCreated datePublished" datetime="2018-12-14T17:49:00+08:00">2018-12-14</time>
+              <time title="创建时间：2019-03-15 11:05:12 / 修改时间：11:26:09" itemprop="dateCreated datePublished" datetime="2019-03-15T11:05:12+08:00">2019-03-15</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-01-04 16:54:14" itemprop="dateModified" datetime="2019-01-04T16:54:14+08:00">2019-01-04</time>
               
             
           </span>
@@ -394,7 +382,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CSS/" itemprop="url" rel="index"><span itemprop="name">CSS</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/JavaScript/" itemprop="url" rel="index"><span itemprop="name">JavaScript</span></a></span>
 
                 
                 
@@ -428,19 +416,14 @@
       
 
       
-        <h3 id="单行文本"><a href="#单行文本" class="headerlink" title="单行文本"></a>单行文本</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>富强民主文明和谐<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100px</span>;</span><br><span class="line">  <span class="attribute">white-space</span>: nowrap;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">  <span class="attribute">text-overflow</span>: ellipsis;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="复制-input"><a href="#复制-input" class="headerlink" title="复制 input"></a>复制 input</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">input</span>) </span>&#123;</span><br><span class="line">  input.select()</span><br><span class="line">  alert(<span class="built_in">document</span>.execCommand(<span class="string">'copy'</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="复制文本"><a href="#复制文本" class="headerlink" title="复制文本"></a>复制文本</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> e = <span class="built_in">document</span>.createElement(<span class="string">'textarea'</span>)</span><br><span class="line">  e.value = text</span><br><span class="line">  e.setAttribute(<span class="string">'readonly'</span>, <span class="string">'readonly'</span>)</span><br><span class="line">  <span class="built_in">document</span>.body.appendChild(e)</span><br><span class="line">  e.select()</span><br><span class="line">  alert(<span class="built_in">document</span>.execCommand(<span class="string">'copy'</span>))</span><br><span class="line">  <span class="built_in">document</span>.body.removeChild(e)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="多行文本"><a href="#多行文本" class="headerlink" title="多行文本"></a>多行文本</h3><p><code>HTML</code> 结构</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>The text-overflow property may be specified using one or two values. If one value is given, it specifies overflow behavior for the end of the line (the right end for left-to-right text, the left end for right-to-left text). If two values are given, the first specifies overflow behavior for the left end of the line, and the second specifies it for the right end of the line.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>基础样式</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">overflow</span>: hidden;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.text</span> &gt; <span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h4 id="WebKit-Flexbox"><a href="#WebKit-Flexbox" class="headerlink" title="WebKit Flexbox"></a>WebKit Flexbox</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-box;</span><br><span class="line">  <span class="attribute">-webkit-line-clamp</span>: <span class="number">3</span>;</span><br><span class="line">  <span class="attribute">-webkit-box-orient</span>: vertical;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这种方式可以非常方便地实现功能，但是兼容性较差，只能在 webkit 内核浏览器中生效</p>
-<h4 id="Clamp-js"><a href="#Clamp-js" class="headerlink" title="Clamp.js"></a>Clamp.js</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> text = <span class="built_in">document</span>.querySelector(<span class="string">'.text'</span>)</span><br><span class="line">$clamp(text, &#123;<span class="attr">clamp</span>: <span class="number">3</span>&#125;);</span><br></pre></td></tr></table></figure>
-<p>使用 <code>js</code> 实现功能，兼容性良好</p>
-<h4 id="淡出"><a href="#淡出" class="headerlink" title="淡出"></a>淡出</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.text</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1.2em</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">3.6em</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.text</span><span class="selector-pseudo">:after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">text-align</span>: right;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">right</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">1.2em</span>;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">linear-gradient</span>(to right, rgba(255, 255, 255, 0), <span class="built_in">rgba</span>(255, 255, 255, 1) <span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这种方式需要固定高度（行高 * 行数），伪元素的背景色需要根据需要调整</p>
+<h3 id="复制图片"><a href="#复制图片" class="headerlink" title="复制图片"></a>复制图片</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copyImg</span>(<span class="params">img</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> range = <span class="built_in">document</span>.createRange()</span><br><span class="line">  range.selectNode(img)</span><br><span class="line"></span><br><span class="line">  <span class="keyword">const</span> selection = <span class="built_in">window</span>.getSelection()</span><br><span class="line">  selection.removeAllRanges()</span><br><span class="line">  selection.addRange(range)</span><br><span class="line"></span><br><span class="line">  alert(<span class="built_in">document</span>.execCommand(<span class="string">'copy'</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="Clipboard-API"><a href="#Clipboard-API" class="headerlink" title="Clipboard API"></a>Clipboard API</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">copy</span>(<span class="params">text</span>) </span>&#123;</span><br><span class="line">  navigator.clipboard.writeText(newClip)</span><br><span class="line">    .then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'success'</span>)</span><br><span class="line">    &#125;)</span><br><span class="line">    .catch(<span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'error:'</span>, e)</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="其他方案"><a href="#其他方案" class="headerlink" title="其他方案"></a>其他方案</h3><ul>
+<li><a href="https://github.com/zenorocha/clipboard.js/" target="_blank" rel="noopener">clipboard.js</a></li>
+</ul>
 
       
     </div>
@@ -472,9 +455,17 @@
       
         <div class="post-tags">
           
-            <a href="/tags/overflow/" rel="tag"><i class="fa fa-tag"></i> overflow</a>
+            <a href="/tags/剪切板/" rel="tag"><i class="fa fa-tag"></i> 剪切板</a>
           
-            <a href="/tags/text-overflow/" rel="tag"><i class="fa fa-tag"></i> text-overflow</a>
+            <a href="/tags/clipboard/" rel="tag"><i class="fa fa-tag"></i> clipboard</a>
+          
+            <a href="/tags/document-execCommand/" rel="tag"><i class="fa fa-tag"></i> document.execCommand</a>
+          
+            <a href="/tags/Range/" rel="tag"><i class="fa fa-tag"></i> Range</a>
+          
+            <a href="/tags/Selection/" rel="tag"><i class="fa fa-tag"></i> Selection</a>
+          
+            <a href="/tags/Clipboard-API/" rel="tag"><i class="fa fa-tag"></i> Clipboard API</a>
           
         </div>
       
@@ -487,8 +478,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/13/sql-注入/" rel="next" title="sql 注入">
-                <i class="fa fa-chevron-left"></i> sql 注入
+              <a href="/2019/02/15/解决-phpunit-中出现的-PDOException/" rel="next" title="解决 phpunit 中出现的 PDOException">
+                <i class="fa fa-chevron-left"></i> 解决 phpunit 中出现的 PDOException
               </a>
             
           </div>
@@ -496,10 +487,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/01/06/JavaScript-实现读取本地文件、写入文件/" rel="prev" title="JavaScript 实现读取本地文件、写入文件">
-                JavaScript 实现读取本地文件、写入文件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -715,7 +702,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#单行文本"><span class="nav-number">1.</span> <span class="nav-text">单行文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#多行文本"><span class="nav-number">2.</span> <span class="nav-text">多行文本</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#WebKit-Flexbox"><span class="nav-number">2.1.</span> <span class="nav-text">WebKit Flexbox</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Clamp-js"><span class="nav-number">2.2.</span> <span class="nav-text">Clamp.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#淡出"><span class="nav-number">2.3.</span> <span class="nav-text">淡出</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#复制-input"><span class="nav-number">1.</span> <span class="nav-text">复制 input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制文本"><span class="nav-number">2.</span> <span class="nav-text">复制文本</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#复制图片"><span class="nav-number">3.</span> <span class="nav-text">复制图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Clipboard-API"><span class="nav-number">4.</span> <span class="nav-text">Clipboard API</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他方案"><span class="nav-number">5.</span> <span class="nav-text">其他方案</span></a></li></ol></div>
             
 
           </div>
