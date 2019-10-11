@@ -15,10 +15,10 @@
 
 
 <html class="theme-next mist use-motion" lang="zh-CN">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 
 
@@ -43,8 +43,8 @@
 
 
 
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
 
 
 
@@ -67,9 +67,9 @@
 
 
 
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
 
-<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css" />
+<link href="/css/main.css?v=6.4.2" rel="stylesheet" type="text/css">
 
 
 
@@ -119,7 +119,7 @@
 <meta property="og:site_name" content="bedisdover&#39;s blog">
 <meta property="og:description" content="git flow 使用git flow 源于 Vincent Driessen 在 2010 年发布的 一篇博客，用于管理 git 分支。分支类型包含以下几项：  master develop feature/* hotfix/* release/* bugfix/* support/*  本文介绍一种简化的流程，仅包含 master, develop, feature 及 hotfix。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-11-21T09:37:47.639Z">
+<meta property="og:updated_time" content="2019-10-11T08:56:25.853Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git flow 使用">
 <meta name="twitter:description" content="git flow 使用git flow 源于 Vincent Driessen 在 2010 年发布的 一篇博客，用于管理 git 分支。分支类型包含以下几项：  master develop feature/* hotfix/* release/* bugfix/* support/*  本文介绍一种简化的流程，仅包含 master, develop, feature 及 hotfix。">
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/10/31/Git-flow-使用/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/10/31/Git-flow-使用/">
 
 
 
@@ -235,7 +235,7 @@
           
           <li class="menu-item menu-item-home">
     <a href="/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br>首页</a>
   </li>
         
         
@@ -243,7 +243,7 @@
           
           <li class="menu-item menu-item-tags">
     <a href="/tags/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>标签</a>
   </li>
         
         
@@ -251,7 +251,7 @@
           
           <li class="menu-item menu-item-categories">
     <a href="/categories/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-th"></i> <br />分类</a>
+      <i class="menu-item-icon fa fa-fw fa-th"></i> <br>分类</a>
   </li>
         
         
@@ -259,7 +259,7 @@
           
           <li class="menu-item menu-item-archives">
     <a href="/archives/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
   </li>
         
         
@@ -267,7 +267,7 @@
           
           <li class="menu-item menu-item-tools">
     <a href="/tools/" rel="section">
-      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br />tools</a>
+      <i class="menu-item-icon fa fa-fw fa-cogs"></i> <br>tools</a>
   </li>
 
       
@@ -377,13 +377,13 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-11-21 17:37:47" itemprop="dateModified" datetime="2018-11-21T17:37:47+08:00">2018-11-21</time>
+                <time title="修改时间：2019-10-11 16:56:25" itemprop="dateModified" datetime="2019-10-11T16:56:25+08:00">2019-10-11</time>
               
             
           </span>
 
           
-            <span class="post-category" >
+            <span class="post-category">
             
               <span class="post-meta-divider">|</span>
             
@@ -440,27 +440,27 @@
 </ul>
 <p>本文介绍一种简化的流程，仅包含 <code>master</code>, <code>develop</code>, <code>feature</code> 及 <code>hotfix</code>。</p>
 <a id="more"></a>
-<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow init</span><br></pre></td></tr></table></figure>
+<h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow init</span><br></pre></td></tr></table></figure>
 <h3 id="master"><a href="#master" class="headerlink" title="master"></a>master</h3><p><code>master</code> 分支用于发布上线，随时可发布。</p>
 <h3 id="develop"><a href="#develop" class="headerlink" title="develop"></a>develop</h3><p><code>develop</code> 分支用于日常开发，存放最新的开发版本。</p>
 <h3 id="feature"><a href="#feature" class="headerlink" title="feature"></a>feature</h3><p><code>feature</code> 分支用于开发新需求，从 <code>develop</code> 分支新建，开发结束后需要合并回 <code>develop</code>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// 新增 feature 分支</span><br><span class="line">git flow feature start feature_branch</span><br><span class="line"></span><br><span class="line">// 发布到远程仓库</span><br><span class="line">git flow feature publish feature_branch</span><br><span class="line"></span><br><span class="line">// 提交代码</span><br><span class="line">git add &lt;git-file&gt;</span><br><span class="line">git commit -a</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line">// 合并至develop</span><br><span class="line">git flow feature finish feature_branch</span><br><span class="line"></span><br><span class="line">// 推送至远程仓库</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新增 feature 分支</span></span><br><span class="line">git flow feature start feature_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布到远程仓库</span></span><br><span class="line">git flow feature publish feature_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交代码</span></span><br><span class="line">git add &lt;git-file&gt;</span><br><span class="line">git commit -a</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并至develop</span></span><br><span class="line">git flow feature finish feature_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送至远程仓库</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 <h3 id="hotfix"><a href="#hotfix" class="headerlink" title="hotfix"></a>hotfix</h3><p><code>hotfix</code> 分支用于修复线上 <code>bug</code>，从 <code>master</code> 分支新建，开发结束后需要合并至 <code>develop</code> 和 <code>master</code>。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// 新增 hotfix 分支</span><br><span class="line">git flow hotfix start hotfix_branch</span><br><span class="line"></span><br><span class="line">// 发布到远程仓库</span><br><span class="line">git flow hotfix publish hotfix_branch</span><br><span class="line"></span><br><span class="line">// 提交代码</span><br><span class="line">git add &lt;git-file&gt;</span><br><span class="line">git commit -a</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line">// 合并至 master, develop</span><br><span class="line">git flow hotfix finish hotfix_branch</span><br><span class="line"></span><br><span class="line">// 推送至远程仓库(当前位于 develop 分支)</span><br><span class="line">git push</span><br><span class="line">git checkout master</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-<h2 id="命令详情"><a href="#命令详情" class="headerlink" title="命令详情"></a>命令详情</h2><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature start feature_branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 新增 hotfix 分支</span></span><br><span class="line">git flow hotfix start hotfix_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 发布到远程仓库</span></span><br><span class="line">git flow hotfix publish hotfix_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 提交代码</span></span><br><span class="line">git add &lt;git-file&gt;</span><br><span class="line">git commit -a</span><br><span class="line">git push</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并至 master, develop</span></span><br><span class="line">git flow hotfix finish hotfix_branch</span><br><span class="line"></span><br><span class="line"><span class="comment"># 推送至远程仓库(当前位于 develop 分支)</span></span><br><span class="line">git push</span><br><span class="line">git checkout master</span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+<h2 id="命令详情"><a href="#命令详情" class="headerlink" title="命令详情"></a>命令详情</h2><h3 id="start"><a href="#start" class="headerlink" title="start"></a>start</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature start feature_branch</span><br></pre></td></tr></table></figure>
 <p>等价于</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --local gitflow.branch.feature/feature_branch.base develop</span><br><span class="line">git checkout -b feature/feature_branch develop</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> gitflow.branch.feature/feature_branch.base develop</span><br><span class="line">git checkout -b feature/feature_branch develop</span><br></pre></td></tr></table></figure>
 <p><code>git flow hotfix</code> 同 <code>git flow feature</code></p>
-<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature publish feature_branch</span><br></pre></td></tr></table></figure>
+<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature publish feature_branch</span><br></pre></td></tr></table></figure>
 <p>等价于</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch -q origin</span><br><span class="line">git push -u origin feature/feature_branch:feature/feature_branch</span><br><span class="line">git fetch -q origin feature/feature_branch</span><br><span class="line">git checkout feature/feature_branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch -q origin</span><br><span class="line">git push -u origin feature/feature_branch:feature/feature_branch</span><br><span class="line">git fetch -q origin feature/feature_branch</span><br><span class="line">git checkout feature/feature_branch</span><br></pre></td></tr></table></figure>
 <p><code>git flow hotfix</code> 同 <code>git flow feature</code></p>
-<h3 id="finish"><a href="#finish" class="headerlink" title="finish"></a>finish</h3><h4 id="feature-1"><a href="#feature-1" class="headerlink" title="feature"></a>feature</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature finish feature_branch</span><br></pre></td></tr></table></figure>
+<h3 id="finish"><a href="#finish" class="headerlink" title="finish"></a>finish</h3><h4 id="feature-1"><a href="#feature-1" class="headerlink" title="feature"></a>feature</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow feature finish feature_branch</span><br></pre></td></tr></table></figure>
 <p>等价于</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch -q origin feature/feature_branch</span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff feature/feature_branch</span><br><span class="line">git branch -d feature/feature_branch</span><br></pre></td></tr></table></figure>
-<h3 id="hotfix-1"><a href="#hotfix-1" class="headerlink" title="hotfix"></a>hotfix</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow hotfix finish hotfix_branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git fetch -q origin feature/feature_branch</span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff feature/feature_branch</span><br><span class="line">git branch -d feature/feature_branch</span><br></pre></td></tr></table></figure>
+<h3 id="hotfix-1"><a href="#hotfix-1" class="headerlink" title="hotfix"></a>hotfix</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git flow hotfix finish hotfix_branch</span><br></pre></td></tr></table></figure>
 <p>等价于</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge --no-ff hotfix/hotfix_branch</span><br><span class="line">git tag -a hotfix_branch</span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff hotfix_branch</span><br><span class="line">git branch -d hotfix/hotfix_branch</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge --no-ff hotfix/hotfix_branch</span><br><span class="line">git tag -a hotfix_branch</span><br><span class="line">git checkout develop</span><br><span class="line">git merge --no-ff hotfix_branch</span><br><span class="line">git branch -d hotfix/hotfix_branch</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -580,9 +580,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image"
-                src="/images/avatar.png"
-                alt="bedisdover" />
+              <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="bedisdover">
             
               <p class="site-author-name" itemprop="name">bedisdover</p>
               <p class="site-description motion-element" itemprop="description">做一个安静的软件工程师</p>
